@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  store-managment :
+    image: racem123/storemanagment
+    ports:
+      - 8585:8585
+    depends_on:
+      - mysqlconnection
+
+  medical-file:
+    image: racem123/medicalfile
+    ports:
+      - 8787:8787
+    depends_on:
+      - mysqlconnection
+
+  mysqlconnection:
+    image: mysql
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cliniquedb
+
+volumes:
+  todo-mysql-data:
