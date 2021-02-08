@@ -1,5 +1,6 @@
 # Microservices communication via HTTP
 This project have two applications : medicalFile and storeManagment
+Contact me if you have problem : naifar.racem@gmail.com
 
 # DESCRIPTION
 A medical file returned from the REST API of the service "medicalfile"  must contain the list of medications given to a patient.
