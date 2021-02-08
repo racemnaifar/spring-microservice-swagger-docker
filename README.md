@@ -22,3 +22,7 @@ https://docs.docker.com/docker-for-windows/wsl/
 5- Use docker compose to improve the deployment of your system(the two microservices and databases).
 Also you can try to use a maven plugin to build the docker images instead of using the docker build command.
 https://docs.docker.com/compose/
+
+# Architecture
+![image](https://user-images.githubusercontent.com/78737274/107230551-81d9d800-6a1f-11eb-9cca-7c7a5b89c55e.png)
+
